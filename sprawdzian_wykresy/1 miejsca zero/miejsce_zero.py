@@ -4,6 +4,9 @@
 def f(x):
     return x**3 - 3*x**2 + 2*x - 6 # rozpatrujemy wielomian f(x) = x^3 - 3x^2 + 2x - 6
 
+
+
+
 def szukaj(a, b, eps):
     if f(a) == 0.0:
         return a
@@ -16,6 +19,7 @@ def szukaj(a, b, eps):
         return srodek
     if f(a)*f(srodek) < 0:
         return szukaj(a, srodek, eps)
+    
     
     return szukaj(srodek, b, eps)
 

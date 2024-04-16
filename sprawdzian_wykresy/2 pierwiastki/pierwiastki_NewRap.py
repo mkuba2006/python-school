@@ -1,17 +1,17 @@
 # metoda Newtona Rapsona
 
-def znajdz(P):
+def znajdz(pole):
     a = 1.0
-    b = P
+    b = pole
 
     while abs(a - b) >= 0.000001:
         a = (a + b) / 2.0
-        b = P / a
+        b = pole / a
 
     return (a + b) / 2.0
 
 
-x = float(input("Podaj liczbe: "))
+pole = float(input("Podaj liczbe: "))
 
-print(znajdz(x))
+print(znajdz(pole))
 
